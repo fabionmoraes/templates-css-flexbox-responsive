@@ -40,10 +40,10 @@
     <!-- Menu Logo -->
     <nav id="menu-logo">
      <div class="barra-menu">
-        <img src="/images/logo-central.jpg" class="fadeIn" alt="Logo Central Geradores" >
+        <a href="/"><img src="/images/logo-central.jpg" class="fadeIn" alt="Logo Central Geradores" ></a>
         <div>
           <ul class="fadeIn">
-            <li><a href="#">Empresa</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
             <li><a href="#">Locações</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Serviços</a></li>
@@ -53,6 +53,24 @@
           </ul>
         </div>
      </div>
+
+      <!-- Mobile aparece -->
+      <div class="barra-mobile">
+        <button class="btn-mobile"><img src="./images/icons/mobile/menu-button.svg" alt="Navegação Menu" ></button>
+      </div>
+      <div class="barra-menu-mobile" id="disabled">
+        <ul class="nav-mobile">
+          <li><a href="empresa.html"><img src="./images/icons/arrow-point-to-right.svg" > Empresa</a></li>
+          <li><a href="#"><img src="./images/icons/arrow-point-to-right.svg" > Locações</a></li>
+          <li><a href="#"><img src="./images/icons/arrow-point-to-right.svg" > Produtos</a></li>
+          <li><a href="#"><img src="./images/icons/arrow-point-to-right.svg" > Serviços</a></li>
+          <li><a href="#"><img src="./images/icons/arrow-point-to-right.svg" > Clientes</a></li>
+          <li><a href="#"><img src="./images/icons/arrow-point-to-right.svg" > Blog</a></li>
+          <li><a href="#"><img src="./images/icons/arrow-point-to-right.svg" > Contato</a></li>
+        </ul>
+      </div>
+      <!-- fim Mobile -->
+
     </nav>
     <!-- Banner txt e foto -->
     <div class="banner">
@@ -403,6 +421,23 @@
       }
     }
   ]
+});
+$(document).ready(function(){
+
+$('.btn-mobile').click(function() {
+
+  var ativo = $('.barra-menu-mobile').attr('id');
+  
+  if(ativo === 'ativo') {
+    $('.barra-menu-mobile').attr('id', 'disabled');
+    $('.btn-mobile').html('<img src="./images/icons/mobile/menu-button.svg" alt="Navegação Menu" >');
+  } else {
+    $('.barra-menu-mobile').attr('id', 'ativo');
+    $('.btn-mobile').html('<img src="./images/icons/mobile/error.svg" alt="Navegação Menu" >');
+  }
+
+});
+
 });
 </script>
 </body>
