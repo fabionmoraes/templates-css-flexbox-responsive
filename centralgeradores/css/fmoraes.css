@@ -523,3 +523,67 @@ content {
 .padding-lr-12::after {
   padding-right: 0;
 }
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  color: #575757;
+}
+
+.grid-card {
+  background: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  flex: 1;
+  padding: 12px;
+  box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+  border-radius: 8px;
+}
+
+.grid-card img {
+  width: 100%;
+}
+
+.grid-card h5 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 481px) {
+  .card-body {
+    flex-direction: column;
+  }
+
+  .grid-card {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-body {
+    flex-direction: row;
+  }
+
+  .grid-card {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card-body {
+    flex-direction: row;
+  }
+
+  .grid-card {
+    margin-top: 0;
+  }
+}
+
+.grid-white {
+  background: white;
+  box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+}

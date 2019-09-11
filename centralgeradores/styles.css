@@ -321,6 +321,16 @@ nav#menu-logo div {
   height: 68px;
 }
 
+.icon-content2 {
+  font-size: 17px;
+  color: #000;
+}
+
+.icon-content2 img {
+  height: 68px;
+  filter: invert(75%);
+}
+
 .paralax {
   padding: 62px 0 62px 0;
   background-color: #000;
@@ -340,9 +350,7 @@ nav#menu-logo div {
   z-index: 6;
   bottom: 22px;
   left: 22px;
-  -webkit-box-shadow: 0px 0px 8px 0px #000000;
-  -moz-box-shadow: 0px 0px 8px 0px #000000;
-  box-shadow: 0px 0px 8px 0px #000000;
+  box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
 }
 
 .whatsapp-icon a {
@@ -455,6 +463,15 @@ nav#menu-logo div {
 
 .conteudo-geral a:hover {
   opacity: 0.5;
+}
+
+.conteudo-geral h5 {
+  font-size: 17px;
+}
+
+.conteudo-geral p {
+  margin-top: 8px;
+  margin-bottom: px;
 }
 
 .title-page {
